@@ -1,0 +1,72 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width:200px;height:200px;background:#ff0000" id="recuadro1">
+    </div>
+
+    <script>
+        addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio()
+
+        {
+            document.getElementById('recuadro1').addEventListener('mousedown', presion1, false);
+            document.getElementById('recuadro1').addEventListener('mouseup', presion2, false);
+
+        }
+
+        function presion1() {
+            document.getElementById('recuadro1').style.backgroundColor = '#ffff00';
+
+        }
+
+        function presion2() {
+            document.getElementById('recuadro1').style.backgroundColor = '#ff0000';
+        }
+    </script>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color:#ff0000;background:#ccc" id="h1">Glaurys Lithgow
+    </h1>
+
+    <script>
+        addEventListener('DOMContentLoaded', inicio, false);
+
+        function inicio() {
+            document.getElementById('h1').addEventListener('mouseover', entrada, false);
+            document.getElementById('h1').addEventListener('mouseout', salida, false);
+        }
+
+        function entrada() {
+            document.getElementById('h1').style.backgroundColor = '#ffff00';
+            document.getElementById('h1').style.color = '#ff0000';
+        }
+
+        function salida() {
+            document.getElementById('h1').style.backgroundColor = 'white';
+            document.getElementById('h1').style.color = '#ff0000';
+        }
+    </script>
+
+</body>
+
+</html>
